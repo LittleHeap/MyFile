@@ -1,0 +1,253 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{CJK}
+\usepackage{ragged2e}
+\usepackage{geometry}
+
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=1cm}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0.03in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-6pt}
+    \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Custom commands
+
+\newcommand{\target}[1]{
+	\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+        {} & {\textit{\textbf{#1}}}
+    \end{tabular*}
+    \vspace{-10pt}
+}
+
+\newcommand{\resumeItem}[2]{
+    \vspace{-2pt}
+    \item
+        \small\justifying{
+            \textbf{#1}{{#2}}
+            \vspace{-1pt}
+        }
+    \vspace{1pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}
+    \item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \textit{\small#3} & \small{#4} \\
+        \end{tabular*}
+    \vspace{-1pt}
+}
+
+\newcommand{\resumePublication}[2]{
+    \vspace{-2pt}
+    \item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} \\
+            \textit{\small#2} \\
+        \end{tabular*}
+    \vspace{-10pt}
+}
+
+\newcommand{\resumeEducation}[6]{
+    \vspace{-2pt}
+    \item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \textit{\small#3} & \small{#4} \\
+        \end{tabular*}
+        \textit{\textbf{#5}} \textit{\small{#6}} \\
+    \vspace{-1pt}
+}
+
+\newcommand{\resumeSubItem}[2]{
+    \resumeItem{#1}{#2}
+    \vspace{-3pt}
+}
+
+\renewcommand{\labelitemii}{
+    $\circ$
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large \href{https://leetcode.com/XXX/}{Your Name}} & Email : XXXXXXXX@gmail.com\\
+    https://github.com/XXXXXX & Address : XXXXX, XXXXX, XXXXX \\ 
+    & Mobile : +X-XXXXXXXXXX
+\end{tabular*}
+\vspace{-9pt}
+
+%\target{Targeting a software/data engineer new grad position in 2021}
+
+
+%-----------EDUCATION----------------- 
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeEducation
+            {XXXXX University}{XXXXX, USA}
+            {Master of Science in \textbf{XXXXX};  GPA: 4.0/4.0 (Present)}{Sep. 2019 -- May. 2021(Expected)}
+            {Core:}{Algorithms, Computer Architecture, Computer Network, Machine Learning, Java, Database Principle}
+        \resumeEducation
+            {XXXXX University}{XXXXX, China}
+            {Bachelor of Science in \textbf{XXXXX};  GPA: 3.75/4.0;  Rank: XXXXX}{Sep. 2015 -- June. 2019}
+            {Core:}{Data Structure, Operating System, C++, Web Application, Compiler Principles, Linear Algebra, Calculus}
+    \resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\section{Skills}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Programming Language}
+            {: Python, Java, XXXXX}
+    	\vspace{2pt}
+        \resumeSubItem
+            {Database}
+            {: MySQL, XXXXX}
+        \vspace{2pt}
+        \resumeSubItem
+            {Framework}
+            {: Vue.js, Kafka, XXXXX}
+        \vspace{2pt}
+        \resumeSubItem
+            {Library}
+            {: Pytest, Sklearn, Numpy, Pandas, Virtualenv, XXXXX}
+    	\vspace{2pt}
+        \resumeSubItem
+            {Application}
+            {: AWS, VS Code, XXXXX}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {\href{https://www.XXXXX.com}{XXXXX}}{(Remote) XXXXX, CA, USA}
+        {Software Development \textbf{\large Intern} (\textbf{\large Python/Node.js})}{June 2020 - July 2020}
+        \resumeItemListStart
+            \resumeItem
+            {}
+            {Developed XXXXX.}
+            \resumeItem
+            {}
+            {Updated XXXXX.}
+           	\resumeItem
+            {}
+            {Developed XXXXX.}
+            \resumeItem
+            {}
+            {Tested XXXXX.} 
+            \resumeItem
+            {}
+            {Optimized XXXXX.}
+           	\resumeItem
+            {}
+            {Based XXXXX.}
+            \resumeItem
+            {}
+            {Utilized XXXXX.}
+        \resumeItemListEnd
+    
+        \resumeSubheading
+        {XXXXX}{(Remote) XXXXX, CA, USA}
+        {Remote Research Assistant (\textbf{\large Python/Tensorflow})}{May 2018 - Oct 2018}
+        \resumeItemListStart
+            \resumeItem
+            {}
+            {Parsed XXXXX.} 
+            \resumeItem
+            {}
+            {Implemented XXXXX.}
+            \resumeItem
+            {}
+            {Utilized XXXXX.}
+            \resumeItem
+            {}
+            {Proposed XXXXX.}
+            \resumeItem
+            {}
+            {Concluded XXXXX.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {XXXXX}{Beijing, China}
+        {Android Development \textbf{\large Intern} (\textbf{\large Java})}{June 2017 - Aug 2017}
+        \resumeItemListStart
+            \resumeItem
+            {}
+            {Took charge of XXXXX.} 
+            \resumeItem
+            {}
+            {Implemented XXXXX.}
+            \resumeItem
+            {}
+            {Integrated XXXXX.}
+            \resumeItem
+            {}
+            {Packed XXXXX.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+        {HTTP Framework}
+        {: Developed XXXXX.}
+        \resumeSubItem
+        {Insurance Web Application}
+        {: Developed XXXXX.}
+        \resumeSubItem
+        {Music Recommendation System}
+        {: Developed XXXXX.}
+        \resumeSubItem
+        {Competitive Key Word Recommendation Algorithm}
+        {: Implemented XXXXX.}
+        \resumeSubItem
+        {Music Player}
+        {: Developed XXXXX.}
+    \resumeSubHeadingListEnd
+
+\end{document}
+
+
